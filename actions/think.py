@@ -1,3 +1,10 @@
-from mind import thought
+"""make thoughts.
+Will accept sensory inputs in future.
+"""
 
-return thought(print(' '.join(sys.argv)))
+from mind.thought import thought
+
+def think(given):
+  # print(given)
+  # return True
+  return thought(' '.join(given.on), 'express.printterm')

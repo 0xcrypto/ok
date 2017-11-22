@@ -2,13 +2,13 @@
 
 import sys
 from mind import thought
-from actions import express
+import actions
 
 sys.argv.pop(0)
-given = sys.argv
 
 def process(given):
-  print(' '.join(sys.argv))
+  decision = actions.do('think', given) # think of something
+  actions.do(decision.act, decision.on) # act on the decision
 
 if(__name__ == '__main__'):
-  process(given)
+  process(sys.argv)

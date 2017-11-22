@@ -1,5 +1,7 @@
-""" bare thought object """
+class thought(object):
+  """ thought object """
+  act = on = ''
 
-class thought:
-  def __init__(string):
-    self.string = string
+  def __init__(self, this, do=''):
+    self.act = do
+    self.on = this
