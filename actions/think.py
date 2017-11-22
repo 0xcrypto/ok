@@ -1,5 +1,5 @@
 """make thoughts.
-Will accept sensory inputs in future.
+this module is responsible for thinking.
 """
 
 from mind.thought import thought
