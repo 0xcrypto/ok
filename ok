@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import sys
+from mind import thought
+from actions import express
+
+sys.argv.pop(0)
+given = sys.argv
+
+def process(given):
+  print(' '.join(sys.argv))
+
+if(__name__ == '__main__'):
+  process(given)
