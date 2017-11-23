@@ -14,8 +14,8 @@ Presently, it just echoes what you say. This is a 3 hours quick hack but is heav
 ## Adding intelligence
 If you like, you can add some intelligence yourself. Just read the code and figure it out yourself. It is midnight 1:17 here and I am feeling sleepy already. Will write instructions to add intelligence tomorrow. For now, I can give you a hint only.
 
-1. Make an action that accepts thought object as argument and returns a thought object. Action can be a module, package or just function. It must reside in actions as a convention. 
-2. Add some logic (which is the intelligence) to interpret the action in actions/think.py. Be it simple if...else statements or some probability stuff, you can do anything there.
+1. Make an action that accepts thought object as argument and returns a thought object. Action can be a module, package or just function. It must reside in actions. 
+2. Add some logic (which is the intelligence) to interpret the thought in actions/think.py. Be it simple if...else statements or some probability stuff, you can do anything there.
 
 Adding logic to think.py is the hardest part.
 
