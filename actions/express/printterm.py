@@ -1,4 +1,6 @@
 """ Print on terminal """
+from mind.thought import thought
 
-def printterm(thought):
-    print(thought.on)
+class printterm(thought):
+  def do(given):
+    print(given.on)

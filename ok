@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
-import sys, actions
+import sys
+from actions.action import action
 
 sys.argv.pop(0)
 
 def process(given):
-  decision = actions.do('think', given) # think of something
-  actions.do(decision.act, decision.on) # act on the decision
-  
+  decision = action.do('think', given) # think of something
+  action.do(decision.act, decision.on) # act on the decision
+
 
 if(__name__ == '__main__'):
   process(sys.argv)

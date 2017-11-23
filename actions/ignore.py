@@ -1,5 +1,5 @@
-from mind.thought import thought
+from actions.action import action
 
-class ignore(thought):
-  def do():
+class ignore(action):
+  def do(given):
     pass
