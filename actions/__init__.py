@@ -14,4 +14,4 @@ def do(action, act_on):
   except ImportError:
     print("\n[ok]: I don't know how to act - " + action + "." + todo + '\n')
     # return thought('raise', 'EXIT_FAILURE')
-    return False
+    return thought('')
