@@ -1,5 +1,5 @@
 # ok.
-A programmable simple AI assistant for linux. Written in Python3 with minimum dependency.  
+A programmable simple AI framework in Python.  
 
 ## Getting Started
 Just download/clone it and run it.
