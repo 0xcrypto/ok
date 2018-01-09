@@ -1,4 +1,4 @@
-# okai.
+# okai. ![progress: initial stage](https://img.shields.io/badge/progress-initial%20stage-blue.svg)
 A programmable simple AI bot (without any AI so far) in Python.  
 
 ## The name
