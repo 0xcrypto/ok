@@ -7,4 +7,11 @@ class thought(object):
     self.act = do
     self.on = this
 
-
+  def __add__(self, secondThought):
+    return thought(self.on + secondThought.on,
+      secondThought.act, 
+      self.position['x'] + self.position['x'],
+      self.position['y'] + self.position['y'],
+      self.position['z'] + self.position['z'],
+      self.position['t'] + self.position['t']
+    )

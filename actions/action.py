@@ -20,5 +20,6 @@ class action(thought):
     try:
       return getattr(action, todo).do(act_on)
 
-    except AttributeError:
-      print("\n[ok]: I know how to act - " + action.act + " but don't want to - " + todo)
+    except Exception as e:
+      print("[ok]: I know how to act - " + action.__name__ + " but cannot do - " + todo)
+      print("[...] Because " + e.args[0])
