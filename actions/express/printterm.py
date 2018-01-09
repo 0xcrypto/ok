@@ -3,4 +3,4 @@ from mind.thought import thought
 
 class printterm(thought):
   def do(given):
-    print(given.on)
+    print( ' '.join(given.on) )
