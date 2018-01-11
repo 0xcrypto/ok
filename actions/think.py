@@ -10,5 +10,5 @@ from actions.action import action
 import random
 
 class think(action):
-  def do(given):
+  def do(self, given):
     return thought(given.on[1:], given.on[0], posX=random.random(), posY=random.random(), posZ=random.random(), posT=random.random() )

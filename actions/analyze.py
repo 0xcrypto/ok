@@ -1,7 +1,7 @@
 from actions.action import action
 
 class analyze(action):
-  def do(firstthought, secondthought):
+  def do(self, firstthought, secondthought):
     # binary decision on positioning the thought.
     thinkingFirst = firstthought.position['x'] > secondthought.position['x']
     thinkingFirst = (firstthought.position['y'] > secondthought.position['y']) != thinkingFirst

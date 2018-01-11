@@ -3,11 +3,7 @@
 import sys
 from actions.action import action
 
-print("""
-
-          [.]   [o]
-           _______
-""")
+print("""\n\t\t◔_◔\n""")
 
 sys.argv.pop(0)
 
@@ -17,7 +13,7 @@ def process(given):
   action.do(decision.act, decision.on) # act on the decision
 
   # except:
-    # print('[ok]: ◔_◔')
+    # print('[ok]: ')
 
 
 if(__name__ == '__main__'):

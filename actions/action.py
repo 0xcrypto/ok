@@ -8,18 +8,27 @@ class action(thought):
     
     todo = action.split('.')[-1]
 
-    try:
-      action = importlib.import_module('actions.'+ action)
-      # (act_on)
+    if( not callable(action) ):
+      try:
+        action = importlib.import_module('actions.'+ action)
+  
+      except ImportError:
+        print("\n[ok]: I don't know how to - " + action + '.\n')
+        # return thought('raise', 'EXIT_FAILURE')
+        return thought('')
 
-    except ImportError:
-      print("\n[ok]: I don't know how to act - " + action + '.\n')
-      # return thought('raise', 'EXIT_FAILURE')
-      return thought('')
+      try:
+        toAct = getattr(action, todo)()
+        return toAct.do(act_on)
+      
+      except Exception as e:
+        print("[ok]: I can - " + action.__name__ + " but cannot - " + todo)
+        print("[...] Because " + e.args[0])
+        print()
+        print(e)
 
-    try:
-      return getattr(action, todo).do(act_on)
-
-    except Exception as e:
-      print("[ok]: I know how to act - " + action.__name__ + " but cannot do - " + todo)
-      print("[...] Because " + e.args[0])
+    else:
+      return action(act_on)
+    
+    return thought('')
+    # return thought('raise', 'EXIT_FAILURE')
