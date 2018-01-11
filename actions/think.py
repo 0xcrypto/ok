@@ -5,7 +5,7 @@ this module is responsible for thinking.
 Thinking depends on arbitrary data provided to think. 
 """
 from mind.thought import thought
-from actions.analyze import analyze
+# from actions.analyze import analyze
 from actions.action import action
 import random
 

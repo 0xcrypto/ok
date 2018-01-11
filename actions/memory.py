@@ -28,13 +28,10 @@ class memory(action):
 
   def memorize(self, data):
     print(data)
+    return thought('know', '')
 
   def do(self, act_on):
-    print( self )
-    # return self
-    # return getattr(self, self)(act_on.on)
-
-     # action(self.memorize, act_on, posX=random.random(), posY=random.random(), posZ=random.random(), posT=random.random() )
+    return getattr(self, act_on.on[0])(act_on.on[1:])
   
 
 # def saveMem(thought: thought):
