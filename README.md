@@ -1,5 +1,5 @@
 # okai. ![progress: initial stage](https://img.shields.io/badge/progress-initial%20stage-blue.svg)
-A programmable simple AI bot (without any AI so far) in Python.  
+A programmable simple AI bot (without any AI so far) in Python.
 
 ## The name
 Okai is pronounced as o-kaa-e. It is short for "obviously knows artificial intelligence". Okai is a guy.
@@ -28,6 +28,3 @@ If you like, you can add some intelligence yourself.
 
 ## Contributing
 Simply send PRs and raise issues here. For documentation, present development and future plans, checkout the [trello board](https://trello.com/b/CAvOh70N/ok-ai)
-
-## Future
-I am quite excited with this project. Being simple to implement and smaller in size, I have decided to craft it into my personal butler running as a cgi application on a server. Later on, HTTP requests can be used to call okai from anywhere.
